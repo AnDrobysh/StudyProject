@@ -8,5 +8,12 @@ package Lesson_1.exercises;
     Подсказка: Используйте оператор % для проверки остатка от деления на 2.*/
 
 public class Exercise_1 {
-
+    public static void main(String[] args){
+        int x = 7;
+        if(x % 2 == 0 ){
+            System.out.println("Чётное");
+        } else {
+            System.out.println("Нечётное");
+        }
+    }
 }
