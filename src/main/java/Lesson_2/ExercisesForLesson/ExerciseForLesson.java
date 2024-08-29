@@ -17,40 +17,60 @@ package Lesson_2.ExercisesForLesson;
 Примените приведение типов, чтобы округлить результаты и преобразовать значения типов.
         Используйте математические, логические операторы и операторы сравнения для всех необходимых расчетов.*/
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class ExerciseForLesson {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ввод расстояния и скоростей
-        System.out.println("Введите расстояние между автомобилями (км):");
-        double distance = scanner.nextDouble();
-
-        System.out.println("Введите скорость автомобиля A (км/ч):");
-        double speedA = scanner.nextDouble();
-
-        System.out.println("Введите скорость автомобиля B (км/ч):");
-        double speedB = scanner.nextDouble();
+        double distance;
+        double speedA;
+        double speedB;
 
         // 1. Проверка допустимости скоростей
 
+        do {
+            // Ввод расстояния и скоростей
+            System.out.println("Введите расстояние между автомобилями (км):");
+            distance = scanner.nextDouble();
+
+            System.out.println("Введите скорость автомобиля A (км/ч):");
+            speedA = scanner.nextDouble();
+
+            System.out.println("Введите скорость автомобиля B (км/ч):");
+            speedB = scanner.nextDouble();
+
+            if (speedA > 0 && speedB > 0) {
+                System.out.println("Скорости корректны");
+            } else {
+                System.out.println("Переменные не корректны введите из заново");
+            }}
+        while (speedA < 0 || speedB < 0 || distance < 0);
 
         // 2. Расчет времени до встречи
 
-        // 3. Вычисление расстояния, которое каждый автомобиль проедет до встречи
+        double time = distance / (speedA + speedB);
+        System.out.println("Машины встретятся через " + time + " часов");
 
-        // 4. Определение, какой автомобиль ближе к точке встречи
+    }
+}
 
-        // 5. Определение ближайшего автомобиля с использованием switch case
 
-        // 6. Симуляция движения с использованием циклов
 
-        // Цикл for для симуляции движения по часу
 
-        // Цикл while для отслеживания времени до встречи
+            // 3. Вычисление расстояния, которое каждый автомобиль проедет до встречи
 
-        // Цикл do-while для подтверждения завершения программы
+            // 4. Определение, какой автомобиль ближе к точке встречи
 
-}*/
+            // 5. Определение ближайшего автомобиля с использованием switch case
+
+            // 6. Симуляция движения с использованием циклов
+
+            // Цикл for для симуляции движения по часу
+
+            // Цикл while для отслеживания времени до встречи
+
+            // Цикл do-while для подтверждения завершения программы
+
+
