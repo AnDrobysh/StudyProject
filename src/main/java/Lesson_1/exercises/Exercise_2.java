@@ -9,7 +9,7 @@ public class Exercise_2 {
         String correctPassword = "JavaRocks";
         String userPassword = "javarocks";
 
-        if (userPassword == correctPassword) {
+        if (userPassword.equals(correctPassword)) {
             System.out.println("Access granted");
         } else {
             System.out.println("Access denied");
