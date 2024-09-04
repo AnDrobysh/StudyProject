@@ -4,8 +4,8 @@ package Lesson_3.exercises;
 
 public class Exercise2  {
     public static void main(String[] args) {
-        int[] numbers = {10, 5, 12, 8, 3};
-        int max = 0;
+        int[] numbers = {110, 5, 12, 18, 111113};
+        int max = numbers[0];
 
         for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] > max) {

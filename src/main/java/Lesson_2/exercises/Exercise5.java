@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*Исправьте код так, чтобы он корректно проверял, является ли введенное число простым, используя цикл do-while.*/
 /*ПЕРЕД ТЕМ КАК ВЫПОЛНЯТЬ ЗАДАНИЕ УДАЛИТЕ *//* и *//* В НАЧАЛЕ И КОНЦЕ БЛОКА КОДА, с текста эти символы удалять НЕ НУЖНО*/
 
-/*public class Exercise5 {
+public class Exercise5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");
@@ -14,7 +14,7 @@ import java.util.Scanner;
         boolean isPrime = true;
 
         do {
-            if (num % divisor = 0) {
+            if (num % divisor == 0) {
                 isPrime = false;
                 break;
             }
@@ -27,4 +27,4 @@ import java.util.Scanner;
             System.out.println(num + " не является простым числом.");
         }
     }
-}*/
+}

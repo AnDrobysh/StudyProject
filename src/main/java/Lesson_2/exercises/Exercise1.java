@@ -4,12 +4,12 @@ package Lesson_2.exercises;
 /*ПЕРЕД ТЕМ КАК ВЫПОЛНЯТЬ ЗАДАНИЕ УДАЛИТЕ *//* и *//* В НАЧАЛЕ И КОНЦЕ БЛОКА КОДА, с текста эти символы удалять НЕ НУЖНО*/
 
 
-/*public class Exercise1 {
+public class Exercise1 {
     public static void main(String[] args) {
-        int number = 15;
-        if (number >= 0 && number <= 10)
+        int number = 31;
+        if (number >= 0 && number <= 10) {
             System.out.println("Число в диапазоне [0-10]");
-    } else if (number >= 11 && number <= 20); {
+    } else if (number >= 11 && number <= 20) {
         System.out.println("Число в диапазоне [11-20]");
     } else if (number >= 21 && number <= 30) {
         System.out.println("Число в диапазоне [21-30]");
@@ -17,5 +17,5 @@ package Lesson_2.exercises;
         System.out.println("Число вне всех диапазонов");
     }
 }
-}*/
+}
 

@@ -4,11 +4,11 @@ package Lesson_2.exercises;
 /*ПЕРЕД ТЕМ КАК ВЫПОЛНЯТЬ ЗАДАНИЕ УДАЛИТЕ *//* и *//* В НАЧАЛЕ И КОНЦЕ БЛОКА КОДА, с текста эти символы удалять НЕ НУЖНО*/
 
 
-/*
+
 public class Exercise2 {
     public static void main(String[] args) {
-        int month = 2;
-        int year = 2024; // Високосный год
+        int month = 13;
+        int year = 2008; // Високосный год
         int days;
 
         switch (month) {
@@ -19,7 +19,7 @@ public class Exercise2 {
                 days = 30;
                 break;
             case 2:
-                if ((year % 4 == 0) && (year % 100 != 0) && (year % 400 == 0))
+                if (year % 4 == 0){
                     days = 29;
         } else {
             days = 28;
@@ -31,5 +31,5 @@ public class Exercise2 {
         System.out.println("Количество дней: " + days);
 }
 }
-*/
+
 
