@@ -21,6 +21,10 @@ import java.util.Scanner;
 
 public class ExerciseForLesson {
 
+    public static double distance(double time, double speed){
+        return time * speed;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -52,6 +56,14 @@ public class ExerciseForLesson {
 
         double time = distance / (speedA + speedB);
         System.out.println("Машины встретятся через " + time + " часов");
+
+        // 3. Вычисление расстояния, которое каждый автомобиль проедет до встречи
+
+        double distanceA = distance(time, speedA);
+        double distanceB = distance(time, speedB);
+        System.out.println("растояние для первого " + distanceA + " растояние для второго " + distanceB);
+
+
 
     }
 }
