@@ -8,8 +8,8 @@ public class ArrayExamples {
 
         // Пример 2: Печать элементов массива
         System.out.println("Элементы массива:");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
+        for (int number : numbers) {
+            System.out.print(number + " ");
         }
         System.out.println(); // Переход на новую строку
 
