@@ -1,8 +1,37 @@
-/.gradle/
+# Created by .ignore support plugin (hsz.mobi)
+### Gradle template
+.gradle
 /build/
-/.gradle/6.8/
-/.gradle/6.8/fileHashes/
-/.gradle/6.8/fileChanges/
-/.gradle/6.8/executionHistory/
-/.gradle/6.8/executionHistory/
-/.idea/
+.DS_Store
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Maven template
+target/
+
+
+# User-specific stuff:
+.idea/
+
+# IntelliJ
+out/
+
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# IDEA Files
+*.iml
+
+#Properties
+src/test/resources/reportportal.properties
+/unknown-team-test.txt
+
+.sdkmanrc
