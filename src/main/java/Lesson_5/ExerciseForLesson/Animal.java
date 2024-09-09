@@ -4,5 +4,17 @@ package Lesson_5.ExerciseForLesson;
 Затем создайте два подкласса, Dog и Cat, которые наследуют от Animal
 и реализуют свои собственные версии метода makeSound().*/
 
-public class Exerecise {
+public abstract class Animal {
+    String name;
+    int age;
+
+    public Animal(){
+    }
+
+    public void makeSound(){
+        System.out.println("ААА БЛЯТЬ");
+    };
+
 }
+
+
