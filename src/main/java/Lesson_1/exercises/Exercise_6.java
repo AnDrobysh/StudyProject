@@ -16,5 +16,7 @@ package Lesson_1.exercises;
 
 
 public class Exercise_6 {
-
+    int x = 1;
+    int y = 2;
+    char t= '/';
 }

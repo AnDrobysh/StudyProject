@@ -2,19 +2,22 @@ package Lesson_1.examples;
 
 public class SwitchCase {
     public static void main(String[] args){
-        int day = 12;
-        switch (day) {
-            case 1:
+        int x = 4;
+        int y = 0;
+        char t= '/';
+        switch (t) {
+            case '+':
                 System.out.println("Monday");
                 break;
-            case 2:
+            case '-':
                 System.out.println("Tuesday");
                 break;
-            case 3:
+            case '*':
                 System.out.println("Wednesday");
                 break;
-            case 4:
-                System.out.println("pidaras");
+            case '/':
+                if(y != 0){System.out.println(x/y);}
+                else System.out.println("на ноль делить нельзя");
                 break;
         }
     }
