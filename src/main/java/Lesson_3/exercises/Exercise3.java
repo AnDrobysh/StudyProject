@@ -8,7 +8,7 @@ public class Exercise3 {
         int[] reversed = new int[numbers.length];
 
         for (int i = 0; i < numbers.length; i++) {
-            reversed[i] = numbers[numbers.length - i]; // Ошибка в индексе
+            reversed[i] = numbers[numbers.length - 1 - i]; // Ошибка в индексе
         }
 
         System.out.println("Массив в обратном порядке:");
