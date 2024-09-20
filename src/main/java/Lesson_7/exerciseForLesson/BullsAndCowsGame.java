@@ -74,37 +74,55 @@ public class BullsAndCowsGame extends Game {
 
     public static void bullsAndCows() {
         userArray = creatUserInt();
-        int[] showArray = new int[4];
+        int[] bulls = new int[4];
+        int[][] cows = new int[4][2];
+
         for (int i = 0; i < 4; i++) {
-            int cow = 0;
-            int bull = 0;
+            int howMuchCow = 0;
+
             if (userArray[i] == randomArray[i]) {
-                bull++;
+                bulls[i] = userArray[i];
             }
 
             for (int p = 0; p < 4; p++) {
                 if (userArray[i] == randomArray[p]) {
-                    cow++;
+                    howMuchCow++;
                 }
             }
-            boolean notShow = true;
-            for (int x : showArray)
-                if (userArray[i] == x) {
-                    notShow = false;
-                }
 
-            if (cow > bull && notShow) {
-                System.out.println("Число " + userArray[i] + " является коровой ");
-                showArray[i] = userArray[i];
+            cows[i][0] = userArray[i];
+            cows[i][1] = howMuchCow;
+        }
+
+        for (int i = 0; i < 4; i++) {
+            if (bulls[i] > 0) {
+                System.out.println(bulls[i] + " это бык, который находится на месте " + (i + 1));
             }
+        }
 
-            if(bull > 0) {
-                System.out.println("Это бык, цифра " + userArray[i] + " расположено на месте " + (i + 1));
-                showArray[i] = userArray[i];
+        for (int bull : bulls) {
+            for (int[] cow : cows) {
+                if (cow[0] == bull) {
+                    cow[1] = cow[1] - 1;
+                }
+            }
+        }
+
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (cows[i][0] == cows[j][0] && i != j) {
+                    cows[j][0] = 0;
+                    cows[j][1] = 0;
+                }
+            }
+        }
+
+        for (int[] y : cows) {
+            if (y[1] > 0) {
+                System.out.println("Число " + y[0] + " является коровой");
             }
         }
     }
-
 
     public static void main(String[] args) {
         BullsAndCowsGame bullsAndCowsGame = new BullsAndCowsGame();
@@ -116,7 +134,8 @@ public class BullsAndCowsGame extends Game {
     void startGame() {
         iteration = 0;
         System.out.println("Вы начали играть в быки и коровы");
-        randomArray = createRandomInt();
+        //randomArray = createRandomInt();
+        randomArray = new int[]{1, 1, 2, 2};
         System.out.println();
         while (iteration <= 10) {
             if (Arrays.equals(randomArray, userArray)) {
@@ -149,7 +168,7 @@ public class BullsAndCowsGame extends Game {
         String userString;
         System.out.println("Хотите попробовать снова?(Введите \"да\" или \"нет\")");
         userString = scanner.next();
-        while (userString != "да" || userString != "нет"){
+        while (userString != "да" || userString != "нет") {
             if (userString.equals("да")) {
                 userArray = null;
                 this.startGame();
