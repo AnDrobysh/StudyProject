@@ -43,7 +43,7 @@ public class BullsAndCowsGame extends Game {
         Scanner scanner = new Scanner(System.in);
         int userInt = 0;
         try {
-            System.out.println("Введите число");
+            System.out.println("Введите 4-ёх значное число");
             userInt = scanner.nextInt();
             checkFourDigitNumber(userInt);
         } catch (NotFourDigitNumberException e) {
@@ -133,9 +133,9 @@ public class BullsAndCowsGame extends Game {
     @Override
     void startGame() {
         iteration = 0;
-        System.out.println("Вы начали играть в быки и коровы");
-        //randomArray = createRandomInt();
-        randomArray = new int[]{1, 1, 2, 2};
+        System.out.println("Вы начали играть в быки и коровы. Попробуйте угадать какое четырёхзначное число я загадал");
+        System.out.println("Если цифра на верном месте - она бык, если просто есть в загаданном числе - корова");
+        randomArray = createRandomInt();
         System.out.println();
         while (iteration <= 10) {
             if (Arrays.equals(randomArray, userArray)) {
