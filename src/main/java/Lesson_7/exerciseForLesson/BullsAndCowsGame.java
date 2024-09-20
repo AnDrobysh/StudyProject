@@ -149,8 +149,7 @@ public class BullsAndCowsGame extends Game {
         String userString;
         System.out.println("Хотите попробовать снова?(Введите \"да\" или \"нет\")");
         userString = scanner.next();
-        while (userString != "да" && userString != "нет"){
-            System.out.println(userString);
+        while (userString != "да" || userString != "нет"){
             if (userString.equals("да")) {
                 userArray = null;
                 this.startGame();
